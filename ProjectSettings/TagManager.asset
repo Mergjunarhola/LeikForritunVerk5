@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Foreground
+  - plattform
+  - player
+  - Over Player
+  - Cameara Layer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1045172157
+    locked: 0
+  - name: Foreground
+    uniqueID: 158824695
+    locked: 0
+  - name: plattform
+    uniqueID: 2342275611
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 3324902499
+    locked: 0
+  - name: Over Player
+    uniqueID: 375973517
+    locked: 0
+  - name: Cameara Layer
+    uniqueID: 1601411745
+    locked: 0
