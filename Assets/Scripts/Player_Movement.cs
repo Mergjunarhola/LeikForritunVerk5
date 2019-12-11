@@ -37,11 +37,9 @@ public class Player_Movement : MonoBehaviour {
 	}
 	public void OnLanding(){
 		Debug.Log("Fart");
-		if (Fart==1)
-		{
+		//if (Fart==1){
 		animator.SetBool("IsJumping",false);
-		}
-		Fart++;
+		//}Fart++;
 		
 	}
 	public void OnCrouch(bool isCrouching){
