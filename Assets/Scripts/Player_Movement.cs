@@ -49,14 +49,11 @@ public class Player_Movement : MonoBehaviour {
 	}
 	public void OnLanding(){
 		Debug.Log("Fart");
-		if (Fart==1){
+		if (Fart==0){
 		Fart=2;
 		animator.SetBool("IsJumping",false);
 		}
-		if (Fart==0)
-		{
-			Fart=1;
-		}
+		
 		
 		
 	}

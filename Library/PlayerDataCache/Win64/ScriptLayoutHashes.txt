@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-C:/Users/jonbe/Desktop/Leik upload/New folder/Skilaverkefni4.exe
+C:/Users/jonbe/Desktop/Leik upload/Skil5Relese/Skilaverkefni4.exe
 SceneListBegin?
 Assets/Scenes/prufa.unity
 SceneListEnd?

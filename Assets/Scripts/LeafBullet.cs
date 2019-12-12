@@ -14,10 +14,17 @@ public class LeafBullet : MonoBehaviour {
 	
 	private void OnTriggerEnter2D(Collider2D HitInf) {
 		EnemyScript enemy = HitInf.GetComponent<EnemyScript>();
+		
+		
 		if (enemy != null)
 		{
 			Debug.Log("Sneez");
 			enemy.TakeDamage(damage);
+			Destroy(gameObject);
+		}
+		else if (HitInf.name != "player")
+		{
+			Debug.Log("Sneez");
 			Destroy(gameObject);
 		}
 
