@@ -26,11 +26,16 @@ public class Player_Movement : MonoBehaviour {
 
 		if (Input.GetButtonDown("Jump")& !RelCrouch)
 		{	
+			if (Fart>0)
+			{
 			Ananas=gameObject.AddComponent<AudioSource>();
 			Ananas.clip=FartSou;
+			Fart=0;
 			Ananas.Play();
 			jump=true;
-			Fart=0;
+			}
+			
+			
 			animator.SetBool("IsJumping",true);
 		}
 		if (Input.GetButtonDown("Crouch"))
@@ -44,9 +49,15 @@ public class Player_Movement : MonoBehaviour {
 	}
 	public void OnLanding(){
 		Debug.Log("Fart");
-		//if (Fart==1){
+		if (Fart==1){
+		Fart=2;
 		animator.SetBool("IsJumping",false);
-		//}Fart++;
+		}
+		if (Fart==0)
+		{
+			Fart=1;
+		}
+		
 		
 	}
 	public void OnCrouch(bool isCrouching){

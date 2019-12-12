@@ -110,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hradi: 20
   rb: {fileID: 50915093890721512}
+  damage: 30
 --- !u!212 &212277192943883942
 SpriteRenderer:
   m_ObjectHideFlags: 1
