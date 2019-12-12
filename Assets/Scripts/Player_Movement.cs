@@ -11,7 +11,11 @@ public class Player_Movement : MonoBehaviour {
 	bool crouch =false;
 	bool RelCrouch=false;
 	int Fart= 1;
+	public Transform Snoot;
+
+	public AudioClip FartSou;
 	
+	private AudioSource Ananas;
 	
 	
 	void Update () {
@@ -21,7 +25,10 @@ public class Player_Movement : MonoBehaviour {
 
 
 		if (Input.GetButtonDown("Jump")& !RelCrouch)
-		{
+		{	
+			Ananas=gameObject.AddComponent<AudioSource>();
+			Ananas.clip=FartSou;
+			Ananas.Play();
 			jump=true;
 			Fart=0;
 			animator.SetBool("IsJumping",true);
@@ -44,6 +51,14 @@ public class Player_Movement : MonoBehaviour {
 	}
 	public void OnCrouch(bool isCrouching){
 		RelCrouch=isCrouching;
+		if (RelCrouch)
+		{
+			Snoot.localPosition=new Vector3(0.111f,-0.101f,0f);
+		}
+		else
+		{
+			Snoot.localPosition=new Vector3(0.076f,-0.043f,0f);
+		}
 		animator.SetBool("IsCrouch",isCrouching);
 	}
 
